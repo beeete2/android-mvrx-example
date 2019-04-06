@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_graph" app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.beeete2.android.androidmrvxexample.ui.menu.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_counterFragment"
+            app:destination="@id/counterFragment" />
+    </fragment>
+    <fragment android:id="@+id/userListFragment"
+              android:name="com.beeete2.android.androidmrvxexample.ui.user.list.UserListFragment"
+              android:label="UserListFragment">
+        <action
+            android:id="@+id/action_userListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.beeete2.android.androidmrvxexample.ui.user.detail.UserDetailFragment"
+        android:label="UserDetailFragment" >
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/counterFragment"
+        android:name="com.beeete2.android.androidmrvxexample.ui.counter.CounterFragment"
+        android:label="CounterFragment" />
+</navigation>

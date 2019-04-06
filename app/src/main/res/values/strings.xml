@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidMrvxExample</string>
+    <string name="user_menu_title">User</string>
+    <string name="counter_menu_title">Counter</string>
+</resources>
